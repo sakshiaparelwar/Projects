@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body id="body" class="container">
+    <div class="Calculator">
+      <div>
+        <form>
+          <div id="display">
+            <input type="text" name="display" placeholder="0" />
+          </div>
+
+          <div>
+            <input
+              type="button"
+              value="("
+              class="button"
+              onclick="display.value += '(' "
+            />
+            <input
+              type="button"
+              value=")"
+              class="button"
+              onclick="display.value += ')' "
+            />
+            <input
+              type="button"
+              value="00"
+              onclick="display.value += '00' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="del"
+              class="button"
+              onclick="display.value = display.value.toString().slice(0,-1) "
+            />
+            <input
+              type="button"
+              value="AC"
+              class="button"
+              onclick="display.value = '' "
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="7"
+              id="numbers"
+              onclick="display.value += '7' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="8"
+              onclick="display.value += '8' "
+              id="numbers"
+              class="button"
+            />
+            <input
+              type="button"
+              value="9"
+              id="numbers"
+              onclick="display.value += '9' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="%"
+              class="button"
+              onclick="display.value += '%' "
+            />
+            <input
+              type="button"
+              value="&#8730;"
+              class="button"
+              onclick="display.value =Math.sqrt(display.value)"
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="4"
+              id="numbers"
+              onclick="display.value += '4' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="5"
+              id="numbers"
+              onclick="display.value += '5' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="6"
+              id="numbers"
+              onclick="display.value += '6' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="&#215;"
+              class="button"
+              onclick="display.value += '*' "
+            />
+            <input
+              type="button"
+              value="/"
+              class="button"
+              onclick="display.value += '/' "
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="1"
+              id="numbers"
+              onclick="display.value += '1' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="2"
+              id="numbers"
+              onclick="display.value += '2' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="3"
+              id="numbers"
+              onclick="display.value += '3' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="+"
+              class="button"
+              onclick="display.value += '+' "
+            />
+            <input
+              type="button"
+              value="-"
+              class="button"
+              onclick="display.value += '-' "
+            />
+          </div>
+          <div>
+            <input
+              type="button"
+              value="."
+              class="button"
+              onclick="display.value += '.' "
+            />
+            <input
+              type="button"
+              value="0"
+              id="numbers"
+              onclick="display.value += '0' "
+              class="button"
+            />
+            <input
+              type="button"
+              value="&#177;"
+              class="button"
+              onclick="display.value += '+-' "
+            />
+            <input
+              type="button"
+              value="Enter"
+              class="button"
+              id="Enterbutoon"
+              onclick="display.value=eval(display.value)"
+            />
+          </div>
+
+          <address style="text-align: right; color: rgb(118, 153, 152)">
+            Made by @SakshiParelwar
+          </address>
+        </form>
+      </div>
+    </div>
+    <script src="javapart.js"></script>
+  </body>
+</html>

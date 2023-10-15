@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>To-Do Web App</nav>
+      <div class="todoaap">
+        <input type="text" id="Task" placeholder="Title" />
+        <br />
+
+        <textarea
+          id="textarea"
+          name="Description"
+          cols="50"
+          rows="20"
+          placeholder="Start writing"
+        ></textarea>
+        <button onclick="AddTask()">Save</button>
+      </div>
+      <!-- <div class="tasklist"> -->
+      <ul id="tasklist">
+        <h4>TASK LIST</h4>
+        <!-- <li class="checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+      </ul>
+    </div>
+    <script src="JScript.js"></script>
+    <p>
+      Note: checked and cutted line indicates completed task. Also to mark it
+      completed just click on circle.
+    </p>
+  </body>
+</html>

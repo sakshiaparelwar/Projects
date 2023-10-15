@@ -1,0 +1,98 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(232, 145, 213),
+    rgb(243, 179, 189),
+    rgb(213, 129, 129)
+  );
+}
+p {
+  color: red;
+}
+.container {
+  background-color: rgb(250, 230, 230);
+  border: 1px solid rgb(227, 159, 159);
+  display: flex;
+  width: 1536px;
+  height: 60px;
+  padding-top: 10px;
+  margin: -10px;
+  justify-content: center;
+  font-size: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.todoaap {
+  width: 400px;
+  margin: 100px 5px 50px -1050px;
+  background-color: aliceblue;
+  padding: 10px 30px 70px;
+  border-radius: 10px;
+  height: 400px;
+}
+input {
+  width: 380px;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+button {
+  height: 30px;
+  width: 100px;
+  background-color: rgb(80, 220, 80);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 140px;
+}
+textarea {
+  border-radius: 5px;
+}
+#tasklist {
+  width: 800px;
+  height: 480px;
+  background-color: aliceblue;
+  margin: 100px -800px 50px 80px;
+  padding-left: 70px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  list-style: circle;
+  background-image: url(unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(checked.png);
+}
+ul li span {
+  position: absolute;
+  right: 150px;
+  top: 4px;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  border-radius: 10%;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background-color: red;
+}

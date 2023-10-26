@@ -8,19 +8,14 @@ function Login() {
   const [password, setPassword] = useState();
   const navigate = useNavigate();
 
-  axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/login", { email, password })
-      .then((res) => {
-        console.log("login: " + res.data);
-        if (res.data.Status === "Success") {
-          if (res.data.role === "admin") {
-            navigate("/dashboard");
-          } else {
-            navigate("/");
-          }
+      .post("https://localhost:3001/login", { email, password })
+      .then((result) => {
+        console.log(result);
+        if (result.data === "login successfull") {
+          navigate("/home");
         }
       })
       .catch((err) => console.log(err));
